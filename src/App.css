@@ -39,4 +39,25 @@ body {
 }
 .content{
   background-color: rgb(193, 218, 235);
+
+}
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 10px;
+ 
+}
+.flex-item-right {
+  display: flex;
+ 
+background-color: rgb(217, 231, 245);
+padding: 10px;
+flex: 50%;
+margin: 10px;
+}
+@media (max-width: 800px) {
+  .flex-item-right {
+    flex: 100%;
+  }
 }
