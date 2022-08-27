@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 function Allpost() {
     const [getallpost,setallpost]=useState([])
     const getall=()=>{
-        Axios.get("http://localhost:8000/api/post").then(res=>{
+        Axios.get("https://mern-freelancers.herokuapp.com/api/post").then(res=>{
             setallpost(res.data)
         })
     }

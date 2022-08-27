@@ -22,7 +22,7 @@ const Login = (props) => {
 
         const userData = { email, password };
 
-        axios.post('http://localhost:8000/api/users/login', userData)
+        axios.post('https://mern-freelancers.herokuapp.com/api/users/login', userData)
         .then(response => {
             const { token } = response.data;
             // Save token to localStorage

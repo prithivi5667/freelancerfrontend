@@ -10,7 +10,7 @@ function List(props) {
   
     const [getpost,setgetpost]=useState([])
  const getposts=async ()=>{
-    axios.get("http://localhost:8000/api/post").then(res=>{
+    axios.get("https://mern-freelancers.herokuapp.com/api/post").then(res=>{
       setgetpost(res.data)
     }).catch(err=>{
         console.log(err)

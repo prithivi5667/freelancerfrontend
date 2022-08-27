@@ -22,7 +22,7 @@ function Adddetails(props) {
     };
     console.log(post);
     axios
-      .post("http://localhost:8000/api/post/add", post)
+      .post("https://mern-freelancers.herokuapp.com/api/post/add", post)
       .then((res) => {
         alert("Post sucessfully added");
       })

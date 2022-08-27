@@ -32,7 +32,7 @@ const Signup = () => {
         if (password === confirmPassword) {
             const newUser = { name, email, password }
 
-            axios.post('http://localhost:8000/api/users/register', newUser)
+            axios.post('https://mern-freelancers.herokuapp.com/api/users/register', newUser)
             .then(response => {
                 console.log(response);
                 setRedirect(true);
